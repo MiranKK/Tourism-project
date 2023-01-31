@@ -1,0 +1,293 @@
+*{
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    font-family: 'Source Sans Pro', sans-serif;
+    box-sizing: border-box;
+}
+
+
+body{
+
+    background-image: linear-gradient(rgb(116, 85, 85,0.7),rgb(175, 121, 111,0.1)) , url(/images/Screenshot\ \(22\).png);
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+nav{
+
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    height: 100%;
+    background: rgb(51, 50, 50);
+    width: 88px;
+    overflow: hidden;
+    transition: width 0.2s linear;
+    box-shadow: 0px 20px 35px rgba(0,0,0,0.1);
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+   
+    
+}
+
+
+.logo{
+
+    text-align: center;
+    display: flex;
+    transition: all 0.5s ease;
+
+    
+}
+
+.logo img{
+
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+   
+
+
+}
+
+.logo span{
+
+    font-weight: bold;
+  padding: 7px;
+  position: relative;
+  top: 5px;
+  
+    text-transform: uppercase;
+}
+
+a{
+
+    position: relative;
+    font-size: 22px;
+    display: table;
+    width: 300px;
+    padding: 12px;
+    color: white;
+}
+.fas img{
+    position: relative;
+    width: 45px;
+    height: 45px;
+    top: 5px;
+    font-size: 26px;
+    text-align: center;
+  
+}
+
+.nav-item{
+
+    position: relative;
+  bottom: 10px;
+    margin-left: 34px;
+    font-weight: 700;
+    letter-spacing: 1.7px;
+}
+
+
+
+a:hover{
+    background-color:rgba(255,255,255,0.1) ;
+
+    
+}
+
+nav:hover{
+
+    width: 300px;
+    transition: all 0.5s ease;
+    
+}
+
+.logo:hover{
+
+    background-color: rgba(255,255,255,0.2);
+    
+}
+
+
+
+.back{
+    position: absolute;
+    bottom: 0;
+    
+   
+   
+}
+
+
+
+
+@media screen and (max-width:450px){
+
+nav{
+    width: 300px;
+}
+}
+
+
+
+
+h1 {
+    color: white;
+  
+    position: fixed;
+    left: 700px;
+    top: 10%;
+    margin: 0;
+  letter-spacing: 1.7px;
+  
+  }
+  
+  
+  /* C */
+  /* ========================================================================== */
+  .c {
+    min-width: 700px;
+    width: 500px;
+    height: 500px;
+    border-radius: 12px;
+    padding: 20px;
+    padding-bottom: 40px;
+    box-shadow: 0 8px 48px 2px hsla(10 6% 15% / .4);
+     
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+  
+    position: relative;
+    left: 500px;
+    top: 40px;
+    overflow: hidden;
+    background: hsl(0 0% 90%);
+  
+    box-sizing: border-box;
+  }
+
+ 
+  
+  .ci {
+    position: absolute;
+    top: 0;
+    left: 0;
+  
+    width: inherit;
+    height: inherit;
+    transform-origin: left 50%;
+  
+    background: inherit;
+  
+    z-index: var(--z);
+    transition: .3s ease-out;
+  }
+  
+  .ci img {
+    -moz-user-select: none;
+    user-select: none;
+
+  }
+  
+  .ch {
+    position: absolute;
+    top: 70%;
+    left: 4%;
+    transform: translateY(-50%);
+  color: white;
+
+    font-size: 2rem;
+    
+    text-shadow: 0 2px 10px hsla(var(--h) var(--s) 10% / .3);
+  }
+  
+  input {
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    z-index: -10;
+  }
+  
+  label {
+    width: 10%;
+    height: 10px;
+    margin-right: 4px;
+    border-radius: 20px;
+  
+    background: hsla(0 0% 90% / .3);
+    cursor: pointer;
+  
+    position: relative;
+    z-index: 10;
+  }
+  
+  label:last-child {
+    margin-right: 0;
+  }
+  
+  input:checked+label {
+    background: linear-gradient(to right,
+      hsla(var(--hue) 80% 70% / .7),
+      hsla(calc(var(--hue) + 30) 80% 50% / .7));
+  }
+  
+  input:not(:checked)+label+.ci {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  
+  input:checked+label+.ci~.ci {
+    transform: translateX(100%);
+  }
+  
+  input:not(:checked)+label+.ci {
+    transition: 0;
+  }
+  
+  
+  /* ABS */
+  /* ========================================================================== */
+  .abs-site-link {
+    position: fixed;
+    z-index: 11;
+    bottom: 20px;
+    left: 20px;
+    color: hsla(32 50% 50% / .8);
+    font-size: 1.6rem;
+    font-weight: bold;
+    border-bottom: 3px solid currentColor;
+    text-decoration: none;
+    background-color: inherit;
+  }
+  
+  .abs-profiles {
+    position: fixed;
+    z-index: 10;
+    right: 20px;
+    bottom: 23px;
+    opacity: .8;
+  }
+  
+  .abs-profiles img {
+    filter: hue-rotate(71deg) brightness(1.1);
+    background-color: rgba(0,0,0,0.1);
+  }
+  
+  .abs-profiles a {
+    display: inline-block;
+    margin-left: 6px;
+  }
