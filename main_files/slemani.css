@@ -11,7 +11,7 @@
 
 body{
 
-    background-image: linear-gradient(rgb(116, 85, 85,0.7),rgb(175, 121, 111,0.1)) , url(/images/Screenshot\ \(22\).png);
+    background-image: linear-gradient(rgb(116, 85, 85,0.7),rgb(175, 121, 111,0.1)) , url(images/Screenshot\ \(22\).png);
     height: 100vh;
     background-repeat: no-repeat;
     background-size: cover;
