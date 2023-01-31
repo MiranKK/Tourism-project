@@ -195,7 +195,7 @@ background-attachment: fixed;
 
 
 .city .hawler{
-    background-image: linear-gradient(rgba(255, 174, 174, 0.4),rgba(223, 197, 197, 0.1)),url(/images/Screenshot\ \(23\).png );
+    background-image: linear-gradient(rgba(255, 174, 174, 0.4),rgba(223, 197, 197, 0.1)),url(/main_files/images/halwer.png );
 background-size: cover;
 background-attachment: scroll;
 background-position: center;
@@ -204,7 +204,7 @@ background-repeat: no-repeat;
 
 
 .city .suli{
-    background-image: linear-gradient(rgba(255, 174, 174, 0.4),rgba(223, 197, 197, 0.1)),url(/images/Screenshot\ \(22\).png );
+    background-image: linear-gradient(rgba(255, 174, 174, 0.4),rgba(223, 197, 197, 0.1)),url(/main_files/images/Screenshot\ \(22\).png );
 background-size: cover;
 background-attachment: scroll;
 background-position: center;
@@ -213,7 +213,7 @@ background-repeat: no-repeat;
 
 
 .city .duhok{
-    background-image: linear-gradient(rgba(255, 174, 174, 0.7),rgba(223, 197, 197, 0.2)),url(/images/Screenshot\ \(24\).png );
+    background-image: linear-gradient(rgba(255, 174, 174, 0.7),rgba(223, 197, 197, 0.2)),url(/main_files/images/Screenshot\ \(24\).png );
 background-size: cover;
 background-attachment: scroll;
 background-position: center;
@@ -221,7 +221,7 @@ background-repeat: no-repeat;
 }
 
 .city .halabja{
-    background-image: linear-gradient(rgba(255, 174, 174, 0.7),rgba(223, 197, 197, 0.2)),url(/images/25.jpg);
+    background-image: linear-gradient(rgba(255, 174, 174, 0.7),rgba(223, 197, 197, 0.2)),url(/main_files/images/25.jpg);
 background-size: cover;
 background-attachment: scroll;
 background-position: center;
