@@ -22,8 +22,9 @@ header{
 display: flex;
 height: 150px;
 width: 100%;
-justify-content: space-around;
+justify-content: start;
 align-items: center;
+
 
 }
 
@@ -59,14 +60,14 @@ transition: .3s;
 
 .logo{
 color: antiquewhite;
-font-size: 2.2rem;
+font-size: 2.5rem;
 padding-right: 22px;
 align-items: center;
 font-family: 'Public Sans', sans-serif;
 font-family: 'Squada One', cursive;
-font-size: 2.8rem;
+font-size: 2.2rem;
 position: relative;
-right: 120PX;
+/* right: 120PX; */
 
 }
 span{
@@ -114,6 +115,7 @@ font-family: 'Source Sans Pro', sans-serif;
 
 }
 .nusin .phome{
+    padding-bottom: 12px;
     justify-self: center;
     justify-content: center;
     display: flex;
