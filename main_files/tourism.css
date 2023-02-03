@@ -22,7 +22,7 @@ header{
 display: flex;
 height: 150px;
 width: 100%;
-justify-content: space-around;
+justify-content: start;
 align-items: center;
 
 }
@@ -64,9 +64,8 @@ padding-right: 22px;
 align-items: center;
 font-family: 'Public Sans', sans-serif;
 font-family: 'Squada One', cursive;
-font-size: 2.8rem;
+font-size: 2.2rem;
 position: relative;
-right: 120PX;
 
 }
 span{
@@ -119,6 +118,7 @@ font-family: 'Source Sans Pro', sans-serif;
     display: flex;
     font-size: 2rem;
 font-family: 'Squada One', cursive;
+padding-bottom: 12px;
 }
 /* sharakannnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn */
 
