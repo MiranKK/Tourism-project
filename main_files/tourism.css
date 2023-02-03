@@ -24,15 +24,17 @@ height: 130px;
 width: 100%;
 justify-content: start;
 align-items: center;
+padding: 0 14px;
 
 }
 
 ul li{  display: inline;
 flex-direction: row;
 list-style-type: none;
-padding: 35px;
+padding: 25px;
 width: 44px;
 flex-wrap: wrap;
+margin: 0 12px;
 }
 ul li a{
    
@@ -124,6 +126,8 @@ padding-bottom: 12px;
 .btn{
     display: flex;
     margin: 33px;
+    justify-items: center;
+    justify-content: center
     }
     
     .btn a{
