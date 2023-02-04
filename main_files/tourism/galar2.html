@@ -1,0 +1,158 @@
+ <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="Tourism-project/main_files/tourism/galar.html" />
+    <title>automatic galary</title>
+
+
+
+<style>
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  background: #333;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.image-wrapper {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  transform-style: preserve-3d;
+  transform: perspective(530px) rotateY(0deg);
+  transition: transform 1.7s;
+}
+
+.image-wrapper span {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  transform: rotateY(calc(var(--i) * 45deg)) translateZ(500px);
+}
+
+.image-wrapper span img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+}
+
+.btn-wrapper {
+  position: relative;
+  width: 80%;
+}
+
+.btn {
+  position: absolute;
+  bottom: -80px;
+  background: rgba(25, 111, 186, 0.637);
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 05px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  filter: brightness(1.5);
+}
+
+#prev {
+  left: 15%;
+}
+
+#next {
+  right: 15%;
+}
+
+</style>
+
+
+
+  </head>
+  <body>
+    <div class="image-wrapper">
+      <span style="--i: 1">
+        <img src="Tourism-project/main_files/tourism/pira.jpg" alt="" />
+      </span>
+      <span style="--i: 2">
+        <img src="Tourism-project/main_files/tourism/pira.jpg" alt="" />
+      </span>
+      <span style="--i: 3">
+        <img src="Tourism-project/main_files/tourism/pira2.jpg" alt="" />
+      </span>
+      <span style="--i: 4">
+        <img src="Tourism-project/main_files/tourism/pira3.jpg" alt="" />
+      </span>
+      <span style="--i: 5">
+        <img src="Tourism-project/main_files/tourism/pira4.jpg" alt="" />
+      </span>
+      <span style="--i: 6">
+        <img src="Tourism-project/main_files/tourism/pira.jpg" alt="" />
+      </span>
+      <span style="--i: 7">
+        <img src="Tourism-project/main_files/tourism/pira2.jpg" alt="" />
+      </span>
+      <span style="--i: 8">
+        <img src="Tourism-project/main_files/tourism/pira3.jpg" alt="" />
+      </span>
+      <span style="--i: 8">
+        <img src="Tourism-project/main_files/tourism/pira4.jpg" alt="" />
+      </span>
+    </div>
+    <!-- Button Container -->
+    <div class="btn-wrapper">
+      <button class="btn" id="prev">Prev</button>
+      <button class="btn" id="next" >Next</button>
+    </div>
+    <script>
+
+const imgwrapper = document.querySelector(".image-wrapper");
+const prev = document.getElementById("prev");
+const next = document.getElementById("next");
+
+let a = 0;
+let timeout;
+
+prev.addEventListener("click", function () {
+  a = a + 45;
+  updatefun();
+  
+});
+
+next.addEventListener("click", function ()  {
+  a = a - 45;
+    
+  updatefun();
+});
+
+function updatefun() {
+  imgwrapper.style.transform = `perspective(850px)rotateY(${a}deg)`;
+  
+  timeout = setTimeout(() => {
+
+    a = a - 45;
+    updatefun();
+  }, 20000);
+}
+updatefun();
+
+
+    </script>
+  </body>
+</html>
