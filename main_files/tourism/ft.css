@@ -68,6 +68,12 @@ h1 {
   background-color: #ddd;
 }
 
+
+#back{
+  text-decoration: none;
+color: black;
+}
+
 /* Add a dark background color to the active button */
 .btn.active {
   background-color: #666;
