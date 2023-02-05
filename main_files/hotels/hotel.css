@@ -79,3 +79,32 @@
     background-color: #666;
      color: white;
   }
+
+
+  .slider{
+
+    margin: 50px auto;
+    width: 50%;
+  }
+
+  .img-box img{
+
+    width: 100%;
+  }
+
+  .btn1{
+
+    border: none;
+    outline: none;
+    background-color: #888;
+    padding: 10px 30px;
+    font-size: 20px;
+    cursor: pointer;
+    margin: 10px auto;
+    color: white;
+  }
+
+  .btn1:hover{
+
+    background-color: #111;
+  }
